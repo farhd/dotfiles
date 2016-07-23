@@ -1,0 +1,27 @@
+{
+  "name": "supper",
+  "version": "1.0.0",
+  "description": "Supper at Home - Website",
+  
+  "scripts": {
+    
+    "build-sass": "node-sass sass/screen.scss stylesheets/screen.css",
+    "build-css": "autoprefixer -b 'last 2 versions' < stylesheets/screen.css | cleancss -o stylesheets/screen.min.css ",
+    "build-js": "uglifyjs -o js/main.min.js js/main.js",
+    "build": "npm run build:sass",
+    
+    "watch-sass": "nodemon -e scss -w sass/ -x 'npm run build-sass'",
+    "watch-js": "nodemon -e js -w js/ -x 'npm run build-js'",
+    "watch": "npm run watch-sass",
+    
+    "serve": "puer -p 9000 /",
+    
+    "clean": "rm -r dist/*",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  
+  "repository": {
+    "type": "git",
+    "url": "https://scm.rbsrv.de/git/supper/website"
+  }
+}

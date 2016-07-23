@@ -1,0 +1,15 @@
+"*":
+  "exception-reporting":
+    userId: "8ebcdd1a-4470-44f4-6bac-5ee021dfa1ec"
+  welcome:
+    showOnStartup: false
+  core:
+    themes: [
+      "seti-ui"
+      "monokai"
+    ]
+  editor:
+    invisibles: {}
+    fontSize: 16
+  "atom-beautify":
+    _analyticsUserId: "f127f68c-5c29-4803-84cd-780d3888809a"
